@@ -1,6 +1,4 @@
-# Insight-demo-project
-
-Terraform utilization on SETI streaming detection of anomalous signals
+# Terraform utilization in SETI streaming detection of anomalous signals
 
 Data source: SETI(the Search for Extraterrestrial Intelligence)
 Stream pipeline: Producers - Kafka - Spark streaming -cassandra
