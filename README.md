@@ -1,4 +1,4 @@
-# Terraform utilization in SETI streaming detection of anomalous signals
+# Terraform utilization in SETI streaming detection of anomalous signals (DevOps track)
 
 Data source: SETI(the Search for Extraterrestrial Intelligence) Given a suitable environment and sufficient time, life will develop on other planets. Such a civilization could be detected across interstellar distances, and may actually offer our best opportunity for discovering extraterrestrial life in the near future.
 
