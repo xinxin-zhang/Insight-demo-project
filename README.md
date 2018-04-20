@@ -1,6 +1,7 @@
 # Terraform utilization in SETI streaming detection of anomalous signals
 
 Data source: SETI(the Search for Extraterrestrial Intelligence)
+
 Stream pipeline: Producers - Kafka - Spark streaming -cassandra
 
 Terraform will be used to build, change, and version infrastructure safely and efficiently in spark streaming.
