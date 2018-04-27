@@ -13,7 +13,7 @@ In terraform, a provider is responsible for understanding API interactions and e
 
 ## Challenges:
 
-* Install tehologies on different nodes
+* Install techologies on different nodes
 * Scalability upon increase in data volumn
 * More sophisciated calculation
 * Fault tolerance examination
