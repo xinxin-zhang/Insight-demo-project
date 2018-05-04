@@ -15,7 +15,7 @@ class Producer(object):
     def produce_msgs(self, source_symbol):
         #price_field = random.randint(800,1400)
         msg_cnt = 0
-        start = 50
+        start = 100
         for i in range(10): #for observation groups 13 through 13+range
             #time.sleep(10) #waits between observation groups
             for x in range(30): #1500 means about 1000 per obs because there are 4 producers
