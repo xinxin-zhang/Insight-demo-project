@@ -1,9 +1,3 @@
-/////////////////////////////////////////////////
-//Producer
-//Sending randomly generated signal data like from the GBT
-//Sarah L. Howell
-//Insight Data Engineering 2017 – SETI anomaly detection 
-/////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////
@@ -17,13 +11,4 @@ bash spawn_kafka_streams.sh [insert my kafka ip address here] 4 k1
 
 //To stop your producers from producing
 tmux kill-session -t k1
-
-
-
-/////////////////////////////////////////////////
-// Useful links for producer tools installation
-/////////////////////////////////////////////////
-
-// https://github.com/InsightDataScience/pegasus
-// https://github.com/InsightDataScience/data-engineering-ecosystem/wiki/Kafka-advanced
 
