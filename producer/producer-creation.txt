@@ -11,4 +11,4 @@ bash spawn_kafka_streams.sh [insert my kafka ip address here] 4 k1
 
 //To stop your producers from producing
 tmux kill-session -t k1
-
+###
