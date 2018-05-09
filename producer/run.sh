@@ -1,1 +1,1 @@
-python ~/Insight-demo-project/producer/runTest.py
+python /home/ubuntu/Insight-demo-project/producer/runTest.py
