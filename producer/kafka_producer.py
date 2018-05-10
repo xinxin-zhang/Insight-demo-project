@@ -1,4 +1,5 @@
 import random
+from random import Random
 import sys
 import time
 import six
@@ -8,36 +9,42 @@ from kafka.producer import KeyedProducer
 
 class Producer(object):
 
-    def __init__(self, addr):
-        self.client = SimpleClient(addr)
-        self.producer = KeyedProducer(self.client)
+    def __init__(self, addr=None):
+        self.isNone = True
+        if addr is not None:
+            self.client = SimpleClient(addr)
+            self.producer = KeyedProducer(self.client)
+            self.isNone = False
 
     def produce_msgs(self, source_symbol):
-        #price_field = random.randint(800,1400)
+        random = Random(0);
         msg_cnt = 0
         start = 50
         for i in range(10): #for observation groups 13 through 13+range
             #time.sleep(10) #waits between observation groups
-            for x in range(30): #1500 means about 1000 per obs because there are 4 producers
-                time.sleep(0.8) # 0.2 waits this many seconds before producing another message about 1000 each obs each 5  min
-                observationgroup_field = random.randint(start+i,start+i);
-                observationorder_field = random.randint(1,6) 
-                frequency_field = random.random()*10000
-                snr_field = random.random()*100
-                driftrate_field = random.random()-random.random()
-                uncorrectedfrequency_field = random.random()-random.random()+frequency_field
+            for x in range(3000): #1500 means about 1000 per obs because there are 4 producers
+                time.sleep(0.00001) # 0.2 waits this many seconds before producing another message about 1000 each obs each 5  min
+                self.observationgroup_field = random.randint(start+i,start+i);
+                self.observationorder_field = random.randint(1,6) 
+                self.frequency_field = random.random()*10000
+                self.snr_field = random.random()*100
+                self.driftrate_field = random.random()-random.random()
+                self.uncorrectedfrequency_field = random.random()-random.random()+self.frequency_field
                 str_fmt = "{};{};{};{};{};{};{}"
                 message_info = str_fmt.format(source_symbol,
-                                              observationgroup_field,
-                                              observationorder_field,
-                                              frequency_field,
-                                              snr_field,
-                                              driftrate_field,
-                                              uncorrectedfrequency_field)
-                print message_info
-                self.producer.send_messages('gbthits', source_symbol, message_info)
+                                              self.observationgroup_field,
+                                              self.observationorder_field,
+                                              self.frequency_field,
+                                              self.snr_field,
+                                              self.driftrate_field,
+                                              self.uncorrectedfrequency_field)
+                if not self.isNone:
+                    self.producer.send_messages('gbthits', source_symbol, message_info)
+                else:
+                    break
                 msg_cnt += 1
-                
+            if self.isNone:
+                break 
 
 if __name__ == "__main__":
     args = sys.argv
