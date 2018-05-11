@@ -1,6 +1,7 @@
 import sys
 from random import Random
 import unittest
+import os
 sys.path.append(os.environ['WORKSPACE'])
 import kafka_producer
 
