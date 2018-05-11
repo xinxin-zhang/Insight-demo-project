@@ -4,8 +4,8 @@ import sys
 import time
 import six
 #from datetime import datetime
-from kafka.client import SimpleClient
-from kafka.producer import KeyedProducer
+#from kafka.client import SimpleClient
+#from kafka.producer import KeyedProducer
 
 class Producer(object):
 
