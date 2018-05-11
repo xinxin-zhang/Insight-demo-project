@@ -2,7 +2,7 @@ import sys
 from random import Random
 import unittest
 import kafka_producer
-
+from kafka.client import SimpleClient
 
 class ProducerTest(unittest.TestCase):
 
