@@ -1,8 +1,8 @@
 import sys
 from random import Random
 import unittest
-import os
-sys.path.append(os.environ['WORKSPACE'])
+#import os
+#sys.path.append(os.environ['WORKSPACE'])
 from kafka.client import Simpleclient 
 #import kafka_producer
 
