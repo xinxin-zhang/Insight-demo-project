@@ -1,8 +1,9 @@
 import sys
 from random import Random
 import unittest
+sys.path.append(os.environ['WORKSPACE'])
 import kafka_producer
-from kafka.client import SimpleClient
+
 
 class ProducerTest(unittest.TestCase):
 
