@@ -1,7 +1,7 @@
 import sys
 from random import Random
 import unittest
-import kafka_producer
+import producer
 
 
 class ProducerTest(unittest.TestCase):
@@ -12,7 +12,7 @@ class ProducerTest(unittest.TestCase):
 
 
     def test_observation(self):
-        p = kafka_producer.Producer()
+        p = producer.Producer()
         p.produce_msgs(0)
         self.assertEqual(p.observationgroup_field, 50)
         self.assertEqual(p.observationorder_field, 5)
