@@ -20,7 +20,7 @@ class Producer(object):
         random = Random(0);
         msg_cnt = 0
         start = 50
-        for i in range(100): #for observation groups 13 through 13+range
+        for i in range(1000): #for observation groups 13 through 13+range
             #time.sleep(10) #waits between observation groups
             for x in range(3000): #1500 means about 1000 per obs because there are 4 producers
                 time.sleep(0.00001) # 0.2 waits this many seconds before producing another message about 1000 each obs each 5  min
