@@ -1,3 +1,3 @@
-sleep 1m
+sleep 30s
 git checkout master
 #git pull
