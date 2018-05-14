@@ -1,2 +1,2 @@
-sleep 1min
+sleep 1m
 git pull
