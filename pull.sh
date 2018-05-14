@@ -1,2 +1,2 @@
 sleep 1m
-git pull
+#git pull
