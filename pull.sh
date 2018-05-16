@@ -9,4 +9,4 @@ sleep 20s
 ./usr/local/spark/sbin/start-all.sh
 cd /home/ubuntu/Insight-demo-project/spark-streaming
 sbt assembly
-sleep 2m
+sleep 1m
