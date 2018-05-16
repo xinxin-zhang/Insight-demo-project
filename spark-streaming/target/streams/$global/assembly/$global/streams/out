@@ -2,24 +2,24 @@
 [0m[[0minfo[0m] [0mIncluding from cache: spark-tags_2.11-2.0.0.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: scala-library-2.11.8.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: spark-streaming-kafka-0-8_2.11-2.0.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scalatest_2.11-2.2.6.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: unused-1.0.0.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: kafka_2.11-0.8.2.1.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: scala-xml_2.11-1.0.2.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: scalatest_2.11-2.2.6.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: metrics-core-2.2.0.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: unused-1.0.0.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: scala-parser-combinators_2.11-1.0.2.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: zkclient-0.3.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: log4j-1.2.14.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: kafka-clients-0.8.2.1.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: slf4j-api-1.7.6.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: lz4-1.2.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: spark-cassandra-connector-2.0.1-s_2.11.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: joda-time-2.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: joda-convert-1.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jsr166e-1.1.0.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: netty-all-4.0.33.Final.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: commons-beanutils-1.9.3.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: commons-collections-3.2.2.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: joda-convert-1.2.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: jsr166e-1.1.0.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: spark-cassandra-connector-2.0.1-s_2.11.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: joda-time-2.3.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: scala-reflect-2.11.8.jar[0m
 [0m[[0mdebug[0m] [0mCalculate mappings...[0m
 [0m[[0minfo[0m] [0mChecking every *.class/*.jar file's SHA-1.[0m
