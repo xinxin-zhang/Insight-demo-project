@@ -48,7 +48,7 @@ object PriceDataStreaming {
     val topicsSet = topics.split(",").toSet
 
     // Create context with batch interval
-    val sparkConf = new SparkConf().setAppName("streamhits").set("spark.cassandra.connection.host", "35.160.167.99")
+    val sparkConf = new SparkConf().setAppName("streamhits").set("spark.cassandra.connection.host", "52.38.20.131")
     val ssc = new StreamingContext(sparkConf, Seconds(60))
 
     // Reduce the amount of log information printed to the screen (only warning level and above)
