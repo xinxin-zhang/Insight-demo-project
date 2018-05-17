@@ -211,7 +211,7 @@ object PriceDataStreaming {
         val lines = rdd.map(_._2)
         val ticksDF = lines.map( x => {
                                   val tokens = x.split(";")                        
-                                  Tick(tokens(1).toInt, tokens(2).toInt, tokens(3).toDouble, tokens(4).toDouble, tokens(5).toDouble,tokens(6).toDouble )}).toDF()
+                                  Tick(tokens(1).toInt, tokens(2).toInt, tokens(3).toDouble, tokens(4).toDouble, tokens(5).toDouble*10,tokens(6).toDouble )}).toDF()
         println("The signals that were read in this interval cycle:")
         ticksDF.show()
         println("Count of how many signals were read in this interval cycle:")
@@ -304,7 +304,7 @@ object PriceDataStreaming {
 
    
           // Save anomalous signal results for the finished group to Cassandra table
-          val groupresults = Seq(((finishedgroup).toInt, (numGroupHits).toInt,"Random Source", 100.5, "Random RA", "Random DEC","f1","f2","f3","f4","f5","f6")).toDF("observationgroup", "grouphit", "source", "mjd", "ra", "dec", "filename1", "filename2", "filename3", "filename4", "filename5", "filename6")
+          val groupresults = Seq(((finishedgroup).toInt, (numGroupHits).toInt,"Random Source", 58256.5, "Random RA", "Random DEC","f1","f2","f3","f4","f5","f6")).toDF("observationgroup", "grouphit", "source", "mjd", "ra", "dec", "filename1", "filename2", "filename3", "filename4", "filename5", "filename6")
           println("The anomalous signal results for the finished group:")
           groupresults.show()
           groupresults.write.format("org.apache.spark.sql.cassandra").options(Map("table" -> "groupinfo","keyspace" -> "hitplayground")).mode(SaveMode.Append).save()
