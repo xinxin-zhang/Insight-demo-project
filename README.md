@@ -5,7 +5,7 @@ SETI (the Search for Extraterrestrial Intelligence), the institute that looks fo
 
 ## Stream pipeline:
 The figure below shows how the streaming data pipeline is constructed. The SETI streaming data, as a producer, is ingested in Kafka to identify anomalous signals with Spark Streaming as a consumer, finally save results in a Cassandra database. Then Jenkins is utilized to implement continuous integration and deployment.
-
+![pipeline](images/pipeline.png)
 ## Pipeline outcomes and implementation of continuous integration and deployment 
 Two tables are saved. One is hit table and the second is anomalous table. The hit table saved the SETI data with simple conversion, which hold the similar information with raw data. There are a bunch of properties come with data, the two that SETI are interested are signal to noise ratio and drift rate. Signal to noise ratio identifies the high amplitude signal. The drift rate is defined by how fast the signal migrates. The anomalous table, on the other hand, saved the suspicious hits by group that should take the second measurement  during same night.
 
