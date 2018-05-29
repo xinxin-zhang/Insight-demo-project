@@ -1,7 +1,7 @@
-#Continuous integration and deployment on SETI streaming data detection
+# Continuous integration and deployment on SETI streaming data detection
 
 ## Introduction:
-SETI(the Search for Extraterrestrial Intelligence), the institute that looks for space aliens, collects 500GB streaming data every night. Given a suitable environment and sufficient time, life will develop on other planets. Such a civilization could be detected across interstellar distances, and may actually offer our best opportunity for discovering extraterrestrial life in the near future.If they observe a very interesting needle-like signal, it is of great value to immediately re-measure that anomaly within the same night. This project is finished in 3 weeks , the first part is to build a data pipeline to process SETI data, and second part is to implement continuous integration and deployment of the whole pipeline.  
+SETI (the Search for Extraterrestrial Intelligence), the institute that looks for space aliens, collects 500GB streaming data every night. Given a suitable environment and sufficient time, life will develop on other planets. Such a civilization could be detected across interstellar distances, and may actually offer our best opportunity for discovering extraterrestrial life in the near future.If they observe a very interesting needle-like signal, it is of great value to immediately re-measure that anomaly within the same night. This project is finished in 3 weeks, the first part is to build a data pipeline to process SETI data, and second part is to implement continuous integration and deployment of the whole pipeline.  
 
 ## Stream pipeline:
 The figure below shows how the streaming data pipeline is constructed. The SETI streaming data, as a producer, is ingested in Kafka to identify anomalous signals with Spark Streaming as a consumer, finally save results in a Cassandra database. Then Jenkins is utilized to implement continuous integration and deployment.
