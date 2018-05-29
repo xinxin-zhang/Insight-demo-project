@@ -21,4 +21,4 @@ I run into a couple of challenges of this project.
 * The last is to understand the multi-tenancy in Cassandra. When the codes are updated and tables are deleted in order to rerun everything, it take long time for Cassandra to finish, taking both memory and CPU. When the system is re-started, it will resume the previous task. A good practice is to install them on separates nodes or it will affect spark performance a lot.
 
 ## Useful Links
-Live Demo : clik [here](bit.ly/Insightdemo2018) 
+Live Demo : clik [demo](http://bit.ly/Insightdemo2018) 
