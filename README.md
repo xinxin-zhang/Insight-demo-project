@@ -18,4 +18,7 @@ I run into a couple of challenges of this project.
 
 * Second challenge is the unit test. How to make sure the code is the fit to run before restart everything. I decide to specific seed in the random number generator, when it restart, it starts from the same point, and the results are expected and could be predicted and examed.It is not perfect, there is more items can be checked, but right now it is just a simple version due to the time constraint.
 
-* The last is to understand the multi-tenancy in Cassandra. When the codes are updated and tables are deleted in order to rerun everything, it take long time for Cassandra to finish, taking both memory and CPU. When the system is re-started, it will resume the previous task. A good practice is to install them on separates nodes or it will affect spark performance a lot. 
+* The last is to understand the multi-tenancy in Cassandra. When the codes are updated and tables are deleted in order to rerun everything, it take long time for Cassandra to finish, taking both memory and CPU. When the system is re-started, it will resume the previous task. A good practice is to install them on separates nodes or it will affect spark performance a lot.
+
+## Useful Links
+Live Demo : clik [here](bit.ly/Insightdemo2018) 
