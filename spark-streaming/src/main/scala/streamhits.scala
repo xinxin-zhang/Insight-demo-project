@@ -298,8 +298,7 @@ object PriceDataStreaming {
           println("After joining observations 1 and 3 and 6 and anti-joining with 2 and 4 and 6:")
           res5.get.show
           println("Count after joining observations 1 and 3 and 6 and anti-joining with 2 and 4 and 6 and the final number of anomoulous hits in this group:")
-          val ran = scala.util.Random
-          val numGroupHits = ran.nextInt(300)
+          val numGroupHits = res5.get.count
           println(numGroupHits)
 
    
