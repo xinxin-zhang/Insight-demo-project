@@ -46,8 +46,6 @@ object PriceDataStreaming {
     val brokers = "ec2-35-160-167-99.us-west-2.compute.amazonaws.com:9092"
     val topics = "gbthits"
     val topicsSet = topics.split(",").toSet
-
-    // Create context with batch interval
     val sparkConf = new SparkConf().setAppName("streamhits").set("spark.cassandra.connection.host", "52.38.20.131")
     val ssc = new StreamingContext(sparkConf, Seconds(60))
 
@@ -197,9 +195,6 @@ object PriceDataStreaming {
     Success(res)
   }
 
-  ///////////////////////////////////////////////////////////////////////////////////////////////
-  // For each minibatch logic
-  /////////////////////////////////////////////////////////////////////////////////////////////// 
     
     // Get the lines and show results
     messages.foreachRDD { rdd =>
